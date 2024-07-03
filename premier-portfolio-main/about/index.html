@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+
+    <!-- Primary Meta Tags -->
+    <title>Sayali Sachin | About Me</title>
+    <meta
+      name="Keywords"
+      content="Sayali Sachin, Frontend Engineer,  Code, Communication, Web Development, User Experience, UI/UX Design, Portfolio, Front-End Developer, Developer, UI Engineer, India"
+    />
+    
+  </head>
+
+  <body>
+    <div class="cursor-effect"></div>
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/favicon.svg" alt="" />
+    </a>
+
+    <section class="more-about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sayali <span>Sachin</span>.</h2>
+        </div>
+        <div class="more-about-content">
+          <div class="more-about-img">
+            <img src="../assets/img/profile.jpeg" alt="" />
+          </div>
+          <div class="more-about-text">
+            <p
+              >Frontend Web Developer based in Bangalore, India. Focused on designing
+              engaging UI, building interactive experiences & bringing intuitive designs
+              to life.</p
+            >
+            <br />
+            <p>
+              I curate designs based on the idea of a minimalistic and
+              user-focused approach to design and development, which I imbibe
+              when designing and building fully responsive web applications.</p
+            >
+            <br />
+            
+
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS/SASS</div>
+              <div class="skill-item">ReactJS</div>
+              <div class="skill-item">NextJS</div>
+              <div class="skill-item">Javascript</div>
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">TailwindCSS</div>
+              <div class="skill-item">MongoDB</div>
+              <div class="skill-item">Firebase</div>
+              <div class="skill-item">GSAP</div>
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Framer</div>
+              <div class="skill-item">Webflow</div>
+              <div class="skill-item">SQL</div>              
+              <div class="skill-item">Git/Github</div>
+              <div class="skill-item">Adobe Suite</div>
+              <div class="skill-item">Java</div>
+            </div>
+
+            <div class="tabs">
+              <button
+                type="button"
+                class="tab-item active"
+                data-target="#experience"
+                >Experience</button
+              >
+              <button type="button" class="tab-item" data-target="#education"
+                >Education</button
+              >
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content active" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">May 2024 - June 2024</span>
+                  <h4>Frontend Developer Intern - <span>MicroNXT Solutions Ltd.</span></h4>
+                  <ul>
+                    <li
+                      >Coded using React.js, MongoDB and TailwindCSS to develop
+                      features for web-app platforms.
+                    </li>
+                    <li
+                      >Designed and updated wireframes and prototypes to meet usability and
+                      performance requirements.
+                    </li>
+                    <li
+                      >Worked with product designers, backend developers, and
+                      the whole team to develop the organization’s delivery-tracking system UI and
+                      Frontend.
+                    </li>
+                    <li
+                      >Adhered to React and MERN Stack best practices while building
+                      the company's app.
+                    </li></ul
+                  >
+                </div>
+                
+              </div>
+            </div>
+            <!-- Education -->
+            <div class="tab-content" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2022 - 2026 </span>
+                  <h4
+                    >B.Tech In Information Technology -
+                    <span>Manipal Institute Of Technology, Manipal</span></h4
+                  >
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2020 - 2022 </span>
+                  <h4
+                    >High School -
+                    <span>Chrysali High</span></h4
+                  >
+              </div>
+            </div>
+            </div>
+            <div class="about-cta">
+              <a
+                href="https://drive.google.com/file/d/1HM8437IKFj2k7B7WLhXp9NVl8OhkJ_6_/view?usp=sharing"
+                class="skills-cta"
+                >My resume</a
+              >
+              <span>—</span>
+              <a href="../index.html#contact" class="exp-cta">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../assets/js/app.js"></script>
+    <script>
+      const tabsContainer = document.querySelector(".tabs"),
+        moreAboutSection = document.querySelector(".more-about");
+
+      ////Select Tabs
+      tabsContainer.addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains("tab-item") &&
+          !e.target.classList.contains("active")
+        ) {
+          tabsContainer.querySelector(".active").classList.remove("active");
+          e.target.classList.add("active");
+          const target = e.target.getAttribute("data-target");
+          moreAboutSection
+            .querySelector(".tab-content.active")
+            .classList.remove("active");
+          moreAboutSection.querySelector(target).classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
